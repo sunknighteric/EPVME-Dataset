@@ -1,5 +1,4 @@
 # EPVME-Dataset
-This project is for paper "EPVME: An Open Dataset for Malicious Email Detection".
 The five zip packages are all the malicious samples, totaling 37,283 EML files.
 
 Here are reference links of other open-source datasets we used in our work.
