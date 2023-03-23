@@ -13,15 +13,16 @@ TREC 2007 "https://plg.uwaterloo.ca/~gvcormac/treccorpus07/"
 
 Wooyun Email XSS Dataset "https://github.com/WhiteRabbitc/Wooyun-Email-XSS-Dataset/tree/master/malious-sample"
 
-| Source                                                      & Malicious & Benign & Total  | Malicious | Benign  | Total   |   |   |   |   |   |   |
-|-------------------------------------------------------------------------------------------|-----------|---------|---------|---|---|---|---|---|---|
-| Enron email corpus                                                                        | 0         | 517,401 | 517,401 |   |   |   |   |   |   |
-| Nazario phishing corpus                                                                   | 9,510     | 0       | 9,510   |   |   |   |   |   |   |
-| Trec07                                                                                    | 50,199    | 25,220  | 75,419  |   |   |   |   |   |   |
-| Spam Assassin                                                                             | 2,399     | 6,952   | 9,351   |   |   |   |   |   |   |
-| Wooyun XSS Dataset                                                                        | 168       | 0       | 168     |   |   |   |   |   |   |
-| EPVME Dataset                                                                             | 37,283    | 0       | 37,283  |   |   |   |   |   |   |
-| Total                                                                                     | 99,559    | 549,573 | 649,132 |   |   |   |   |   |   |
+Email Dataset Description:
+| Source                         | Malicious | Benign  | Total   |
+|-------------------------------------------------------------------------------------------|-----------|---------|---------|
+| Enron email corpus                                                                        | 0         | 517,401 | 517,401 | 
+| Nazario phishing corpus                                                                   | 9,510     | 0       | 9,510   | 
+| Trec07                                                                                    | 50,199    | 25,220  | 75,419  | 
+| Spam Assassin                                                                             | 2,399     | 6,952   | 9,351   | 
+| Wooyun XSS Dataset                                                                        | 168       | 0       | 168     |  
+| EPVME Dataset                                                                             | 37,283    | 0       | 37,283  |   
+| Total                                                                                     | 99,559    | 549,573 | 649,132 |  
 
 
 We select and summarize six new types of malicious email attack scenarios that exploit vulnerabilities in email security authentication mechanisms (SPF and DMARC) and email UI rendering, and construct the EPVME dataset. It contains 37,283 malicious emails, and all email samples have email header and body information.
