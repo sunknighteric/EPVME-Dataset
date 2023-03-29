@@ -1,5 +1,5 @@
 # EPVME-Dataset
-The five zip packages are all the malicious samples, totaling 37,283 EML files.
+The five zip packages are all the malicious samples, totaling 37,283 EML files. This dataset is for research purpose.
 
 ## Dataset Description
 Here are reference links of other open-source datasets we used in our work.
