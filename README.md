@@ -83,7 +83,7 @@ Here are the full list of the static features that we extract from all email sam
 
 | Feature Name                         | Description | Domain |
 |--------------------------------|-----------|-----------|
-| Subject<u> </u>IsReply             | If the email is a reply to a previous email from the sender.           |{0,1} |
+| Subject$\underline{ }$IsReply             | If the email is a reply to a previous email from the sender.           |{0,1} |
 |Subject<u><u>文本</u></u>IsForwarded|If the email is forwarded from another account to the recipient.|{0,1} |
 |Subject<u> </u>NumWords |Number of words in the subject line of the email. |N|
 |Subject<u> </u>NumCharacters|Number of characters in the email's subject line.|N|
