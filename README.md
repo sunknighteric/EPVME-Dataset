@@ -153,7 +153,7 @@ Notes:
 |Content Type Unique Num |Number of unique “Content-Type” fields. |N|
 |Content Type Multipart Mixed Num |Number of “Content-Type: multipart/mixed” fields.      |N|
 |Content Transfer Encoding Total Num |Number of “Content-Transfer-Encoding” fields.       |N|
-|Content Transfer Encoding Unique Num & Number of unique “Content-Transfer-Encoding” fields . |N|
+|Content Transfer Encoding Unique Num | Number of unique “Content-Transfer-Encoding” fields . |N|
 |Content Transfer Encoding 64bit Num|Number of “Content-Transfer-Encoding: 64bit” fields. |N|
 |Content Transfer Encoding 7bit Num |Number of “Content-Transfer-Encoding: 7bit” fields.|N|
 |Content Transfer Encoding 8bit Num|Number of “Content-Transfer-Encoding: 8bit” fields.|N|
