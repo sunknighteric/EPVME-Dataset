@@ -139,7 +139,7 @@ Here are the full list of the static features that we extract from all email sam
 | DEP MsgID Helo |Similarity between message id field and field helo.|[0,1]|
 |DEP In Future|If the sending timestamp is in the future of receiving time stamp. |{0,1}|
 
-Note:
+Notes:
 
 (1)Subject Richness = Subject NumWords / Subject NumCharacters.
 
@@ -150,3 +150,61 @@ Note:
 | Feature Name                         | Description | Domain |
 |--------------------------------|-----------|-----------|
 | Content Type Total Num              | Number of “Content-Type” fields.          |N |
+|Content Type Unique Num |Number of unique “Content-Type” fields. |N|
+|Content Type Multipart Mixed Num |Number of “Content-Type: multipart/mixed” fields.      |N|
+|Content Transfer Encoding Total Num |Number of “Content-Transfer-Encoding” fields.       |N|
+|Content Transfer Encoding Unique Num & Number of unique “Content-Transfer-Encoding” fields . |N|
+|Content Transfer Encoding 64bit Num|Number of “Content-Transfer-Encoding: 64bit” fields. |N|
+|Content Transfer Encoding 7bit Num |Number of “Content-Transfer-Encoding: 7bit” fields.|N|
+|Content Transfer Encoding 8bit Num|Number of “Content-Transfer-Encoding: 8bit” fields.|N|
+|Content Transfer Encoding Binary Num|Number of “Content-Transfer-Encoding: binary” fields. |N|
+|Content Disposition Total Num  |Number of “Content-Disposition” fields.   |N|
+|Content Disposition Unique Num|Number of unique “Content-Disposition” fields.|N|
+|Content Type Signed Signature Num|Number of digital signature used.|N|
+|Body HasPhonenumber  |If body field has phonenumbers.|{0,1}|
+|Body NumUniqueWords   |Number of words occurred in body field.  |N|
+|Body NumFunctionWords|Number of occurrences of function words in the email body. |N|
+|Body Numlines|Number of lines in body field. |N|
+|Body NumOfURLs  |Number of URLs in body field. |N|
+|Body NumOfDomains|Number of domains in body field.  |N|
+|Body NumWords|Number of total words occurred in body field.  |N|
+|Body NumCharacters |Number of characters occuring in the email body.  |N|
+|Body Richness |Ratio of the number of words to the number of characters in the document. |[0,1] |
+|Body Html|If HTML exists in the body part.|{0,1}|
+|Body Form|If HTML form exists in the body part. |{0,1}|
+|Url NoIpAddresses|Number of links that contain IP addresses.|N|
+|Url IpAddress|Whether existing IP addresses or a qualified domain name in body part.|{0,1}|
+|Url AtSymbol|If links contain an '@' symbol. |{0,1}|
+|Url NoLinks |Number of links in the email body. |N|
+|Url NoIntLinks|Number of links whose target is internal to the email body.|N|
+|Url NoExtLinks| Number of links whose target is outside the email body. |N|
+|Url NoImgLinks|Number of links where the user needs to click on an image in body.|N|
+|Url MaxNoPeriods|Number of periods in the link with the highest number of periods.|N|
+|Url LinkText|If the human-readable link text contains link texts.|{0,1}|
+|Url NonModalHereLinks|If the captured domain links to a domain other than the modal domain.|{0,1}|
+| Url NoPorts |Number of links in the email that contain port information in the address. |N|
+| Url WithFileExtensionNum |Number of URLs with a file extension. |N|
+|Script Scripts                          | If scripts are used in the email body. |{0,1}|
+|Script JavaScript                       | If javascript is used in the email body.   |{0,1}|
+|Script StatusChange                     | If the script attempts to overwrite the status bar in the email client. |{0,1}|
+|Script Popups                           | If the email contains pop-up window code. |{0,1}|
+|Script NoOnClickEvents                  | Number of onClick events in the email.|N|
+| Script NonModalJsLoads                  |If external javascript forms that come from modal domains.|{0,1}|
+|Attachment Num                          | Number of attachments in the email.                |N|
+|Attachment Doc Num                     | Number of 'doc' and 'docx' attachments in the email. |N|
+| Attachment Xls Num                     | Number of 'xls' and 'xlsx' attachments in the email. |N|
+| Attachment Ppt Num                    | Number of 'ppt' and 'pptx' attachments in the email.  |N|
+|Attachment Pdf Num                     | Number of 'pdf' attachments in the email.|N|
+|Attachment Exe Num                     | Number of 'exe' attachments in the email.|N|
+|Attachment Image Num                  | Number of image attachments in the email.(jpg, jpeg, gif, bmp, png)|N|
+|Attachment Video Num                   | Number of video attachments in the email.(avi, mkv, flv, mp4, mov)|N|
+|Attachment Audio Num                   | Number of audio attachments in the email.(wav, mp3, aac, wma, ape)|N|
+|Attachment Compressed Num              | Number of compressed file attachments in the email.(7z, zip, rar)|N|
+|Attachment Text Num                    | Number of text attachments in the email.(txt, md, sh, bat, bak, html, htm)|N|
+| Attachment Other Num                   | Number of other type attachments in the email.|N|
+
+Notes:
+
+(1)Body Richness = Body NumWords \ Body NumCharacters 
+
+(2)Link texts contain click here, login and update.
