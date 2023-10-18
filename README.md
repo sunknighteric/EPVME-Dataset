@@ -87,5 +87,5 @@ Here are the full list of the static features that we extract from all email sam
 |Subject<u><u>文本</u></u>IsForwarded|If the email is forwarded from another account to the recipient.|{0,1} |
 |Subject<u> </u>NumWords |Number of words in the subject line of the email. |N|
 |Subject<u> </u>NumCharacters|Number of characters in the email's subject line.|N|
-|Subject<u> </u>Richness|
+|Subject<u> </u>Richness|Richness of the subject line.|[0,1]|
 
