@@ -74,3 +74,18 @@ To summarize these three types of attacks, the core lies in the vulnerability of
 Next figure is an example of From Header Confusion. There are two *From* fields in the email, and some email clients display the sender information in the first *From* field. Because this signature uses the attacker's information, the email is marked as having a legitimate digital signature.
 
 <img width="397" alt="1680070532386" src="https://user-images.githubusercontent.com/32115816/228442881-c43c4da1-17e3-48e4-8a64-281247ce080b.png">
+
+## Appendix
+
+Here are the full list of the static features that we extract from all email samples to realize the validation of EPVME dataset.
+
+### Header Features
+
+| Feature Name                         | Description | Domain |
+|--------------------------------|-----------|-----------|
+| Subject<u> </u>IsReply             | If the email is a reply to a previous email from the sender.           |{0,1} |
+|Subject<u><u>文本</u></u>IsForwarded|If the email is forwarded from another account to the recipient.|{0,1} |
+|Subject<u> </u>NumWords |Number of words in the subject line of the email. |N|
+|Subject<u> </u>NumCharacters|Number of characters in the email's subject line.|N|
+|Subject<u> </u>Richness|
+
