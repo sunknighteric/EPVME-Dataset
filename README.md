@@ -83,7 +83,7 @@ Here are the full list of the static features that we extract from all email sam
 
 | Feature Name                         | Description | Domain |
 |--------------------------------|-----------|-----------|
-| Subject$\underline{ }$IsReply             | If the email is a reply to a previous email from the sender.           |{0,1} |
+| Subject IsReply             | If the email is a reply to a previous email from the sender.           |{0,1} |
 |Subject IsForwarded|If the email is forwarded from another account to the recipient.|{0,1} |
 |Subject NumWords |Number of words in the subject line of the email. |N|
 |Subject NumCharacters|Number of characters in the email's subject line.|N|
@@ -139,3 +139,6 @@ Here are the full list of the static features that we extract from all email sam
 | DEP MsgID Helo |Similarity between message id field and field helo.|[0,1]|
 |DEP In Future|If the sending timestamp is in the future of receiving time stamp. |{0,1}|
 
+Note:
+(1)Subject Richness = Subject NumWords / Subject NumCharacters.
+(2)The DEP features are calculated using the Jaccard similarity coefficient.
