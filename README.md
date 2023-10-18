@@ -84,8 +84,58 @@ Here are the full list of the static features that we extract from all email sam
 | Feature Name                         | Description | Domain |
 |--------------------------------|-----------|-----------|
 | Subject$\underline{ }$IsReply             | If the email is a reply to a previous email from the sender.           |{0,1} |
-|Subject<u><u>文本</u></u>IsForwarded|If the email is forwarded from another account to the recipient.|{0,1} |
-|Subject<u> </u>NumWords |Number of words in the subject line of the email. |N|
-|Subject<u> </u>NumCharacters|Number of characters in the email's subject line.|N|
-|Subject<u> </u>Richness|Richness of the subject line.|[0,1]|
+|Subject IsForwarded|If the email is forwarded from another account to the recipient.|{0,1} |
+|Subject NumWords |Number of words in the subject line of the email. |N|
+|Subject NumCharacters|Number of characters in the email's subject line.|N|
+|Subject Richness|Richness of the subject line.|[0,1]|
+|Subject Verify |If subject field has keyword 'verify'. |{0,1}|
+|Subject Debit| If subject field has keyword 'debit'. |{0,1}|
+|Subject Bank|If subject field has keyword 'bank'.|{0,1}|
+|Subject Account| If subject field has keyword 'account'. |{0,1}|
+|Subject Approve|If subject field has keyword 'approve' or 'approval'. |{0,1}|
+|Subject Buy |If subject field has keyword 'buy'.  |{0,1}|
+|Subject Earn|If subject field has keyword 'earn'. |{0,1}|
+|Subject Family  |If subject field has keyword 'family'. |{0,1}|
+|Subject Guarantee|If subject field has keyword 'guarantee'. |{0,1}|
+|Subject Hello|If subject field has keyword 'hello'. |{0,1}|
+| Subject Money|If subject field has keyword 'money'. |{0,1}|
+|Subject Only|If subject field has keyword 'only'.   |{0,1}|
+|Subject Own|If subject field has keyword 'own'.|{0,1}|
+|Subject ?Or! |If subject field has keyword '?' or '!'.|{0,1}|
+|Subject Save|If subject field has keyword 'save' or 'saving'.|{0,1}|
+|Subject Statement |If subject field has keyword 'statement'.|{0,1}|
+|Subject Gapped| If subject field is gapped by underlines or spaces. |{0,1}|
+|Subject HasUsername| If user nickname in from field shows in subject.|{0,1}|
+|Subject Coded|If subject field contains non-ASCII characters. |{0,1}|
+|Subject HasHTML|If subject field contains HTML tags.  |{0,1}|
+|Received TotalNum|Number of “Received: . . . ” fields.  |N|
+|Send NoWords |Number of words in the send field.          |N|
+|Send NoCharacters| Number of characters in the sender field.|N|
+|Send DiffSenderReplyTo|If there is a difference between the sender's domain and the reply-to domain. |{0,1}|
+|Send NonModalSenderDomain |If there is a difference between the sender's domain and the reply-to domain.|{0,1}|
+| From 2Addr|If from field contains more than one email address. |{0,1}|
+|From Coded |If from field is coded with non-ASCII char set. |{0,1}|
+| From SpecialWord|If from field contains keyword 'free', 'no-reply', and 'offer'.|{0,1}|
+|From Mixed| If from field contains numbers mixed in with letters. |{0,1}|
+|From Lower|If from field does not have lower case letter. |{0,1}|
+|From NoAddr|Number of valid addresses in from field. |N|
+|From NoUser|Number of users in from field.  |N|
+|From HasHTML|If from field contains HTML tags.  |{0,1}|
+|From Subdomain|If from field contains subdomain email address.  |{0,1}|
+|InReplyTo|If in reply to field exists. |{0,1}|
+|MailFrom Bounce|If mailfrom field has keyword 'bounce'. |{0,1}|
+|MsgID At|If message id field does not have '@'.|{0,1}|
+|MsgID Host|If message id field does not have a valid domain. |{0,1}|
+|ReplyTo Mixed|If reply to field exists and contains numbers mixed with letters. |{0,1}|
+|ReplyTo Addr| If reply to field exists but no valid address.|{0,1}|
+|To Missing|If to field is missing.|{0,1}|
+|To Addr|If the to field does not exist or has no valid address.  |{0,1}|
+|To Sorted|If more than 2 recipients in to field and in alphabetical order. |{0,1}|
+|To HasHTML|If to field contains HTML tags.  |{0,1}|
+|Webmail True |If is webmail field is true (email was sent from a web interface).  |{0,1}|
+|DEP Mailfrom From|Similarity between mailfrom field address and field from address.|[0,1]|
+|DEP Mailfrom Helo | Similarity between mailfrom field and helo field.|[0,1]|
+|DEP Mailfrom ReplyTo|Similarity between mailfrom field and field reply to (if exists).|[0,1]|
+| DEP MsgID Helo |Similarity between message id field and field helo.|[0,1]|
+|DEP In Future|If the sending timestamp is in the future of receiving time stamp. |{0,1}|
 
