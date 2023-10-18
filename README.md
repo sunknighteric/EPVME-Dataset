@@ -140,5 +140,13 @@ Here are the full list of the static features that we extract from all email sam
 |DEP In Future|If the sending timestamp is in the future of receiving time stamp. |{0,1}|
 
 Note:
+
 (1)Subject Richness = Subject NumWords / Subject NumCharacters.
+
 (2)The DEP features are calculated using the Jaccard similarity coefficient.
+
+### Body Features
+
+| Feature Name                         | Description | Domain |
+|--------------------------------|-----------|-----------|
+| Content Type Total Num              | Number of “Content-Type” fields.          |N |
